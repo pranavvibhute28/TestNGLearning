@@ -2,21 +2,25 @@ package pranav;
 
 import org.testng.annotations.Test;
 
+//when we run Grouping-class from configuration all methods from grouping class gets executed 
+@Test(groups="Grouping-class")
 public class Grouping {
 	
-	//this executes when smoke group executed
+	
+	//This executes for each test case or we can say test methods
+	//This executes when smoke group executed
 	@Test(groups="smoke")
 	public void TestCaseA() {
 		System.out.println("Test Case smoke");
 	}
 	
-	//this executes when sanity group executed
+	//This executes when sanity group executed
 	@Test(groups="sanity")
 	public void TestCaseB() {
 		System.out.println("Test Case sanity");
 	}
 	
-	//this executes when combination of sanity and smoke group executed
+	//This executes when combination of sanity and smoke group executed
 	@Test(groups= {"sanity","smoke"})
 	public void TestCaseC() {
 		System.out.println("Test Case smoke + sanity");
