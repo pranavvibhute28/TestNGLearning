@@ -24,13 +24,15 @@ public class SoftAssertion {
 		
 		System.out.println("Before soft assertion");
 		
+		//checks if OrangeHRM == google.. it's not so executes "after soft assertion" statement
 		sa.assertEquals(actualtitle, expectedtitle);
 		
 		System.out.println("After soft assertion");
 	
+		//this is used to collect failed report or log
 		sa.assertAll();
 		
-		driver.close();
+		driver.quit();
 	
 	}
 
