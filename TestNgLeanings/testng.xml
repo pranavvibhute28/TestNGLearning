@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI Test Suite">
+  <test name="Functional Test">
+    <classes>
+      <class name="pranav.Assertions" /><class name="pranav.Annotations" /><class name="pranav.TestNGDemo"></class>
+      <class name="pranav.SoftAssertion"/>
+      
+      <class name="pranav.Grouping"/>
+      
+    </classes>
+  </test> <!--Test-->
+</suite> <!-- Suite -->

@@ -11,7 +11,7 @@ public class SoftAssertion {
 	@Test
 	public void CheckTitleOfBrowser() {
 			
-		String expectedtitle = "OrangeHRM";
+		String expectedtitle = "Google";
 		
 		WebDriverManager.edgedriver().setup();
 		EdgeDriver driver = new EdgeDriver();
@@ -21,6 +21,7 @@ public class SoftAssertion {
 		driver.get("https://google.com");
 		
 		String actualtitle = driver.getTitle();
+		System.out.println("Soft Assertion program");
 		
 		System.out.println("Before soft assertion");
 		

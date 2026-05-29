@@ -9,8 +9,10 @@ public class Grouping {
 	
 	//This executes for each test case or we can say test methods
 	//This executes when smoke group executed
+	
 	@Test(groups="smoke")
 	public void TestCaseA() {
+		System.out.println("Grouping Program");
 		System.out.println("Test Case smoke");
 	}
 	
@@ -21,7 +23,7 @@ public class Grouping {
 	}
 	
 	//This executes when combination of sanity and smoke group executed
-	@Test(groups= {"sanity","smoke"})
+	@Test(groups= {"regression","smoke"})
 	public void TestCaseC() {
 		System.out.println("Test Case smoke + sanity");
 	}

@@ -11,15 +11,15 @@ public class Assertions {
 	@Test
 	public void CheckTitle() {
 		
-		String expectedtitle = "OrangeHRM";
+		String expectedtitle = "Google";
 		
 		WebDriverManager.edgedriver().setup();
 		EdgeDriver driver = new EdgeDriver();
 		
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.get("https://google.com");
 		
 		String actualtitle = driver.getTitle();
-		
+		System.out.println("Assertion Program");
 		Assert.assertEquals(actualtitle, expectedtitle);
 		driver.close();
 		

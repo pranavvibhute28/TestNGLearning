@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-28T14:07:24 IST" name="Default suite" finished-at="2026-05-28T14:07:36 IST" duration-ms="12480">
+  <suite started-at="2026-05-29T18:17:46 IST" name="Regression Suite" finished-at="2026-05-29T18:17:46 IST" duration-ms="69">
     <groups>
+      <group name="Grouping-class">
+        <method signature="Grouping.TestCaseB()[pri:0, instance:pranav.Grouping@175c2241]" name="TestCaseB" class="pranav.Grouping"/>
+      </group> <!-- Grouping-class -->
+      <group name="sanity">
+        <method signature="Grouping.TestCaseB()[pri:0, instance:pranav.Grouping@175c2241]" name="TestCaseB" class="pranav.Grouping"/>
+        <method signature="TestNGDemo.TestCasee01()[pri:0, instance:pranav.TestNGDemo@557caf28]" name="TestCasee01" class="pranav.TestNGDemo"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2026-05-28T14:07:24 IST" name="Default test" finished-at="2026-05-28T14:07:36 IST" duration-ms="12480">
-      <class name="pranav.Assertions">
-        <test-method signature="CheckTitle()[pri:0, instance:pranav.Assertions@28701274]" started-at="2026-05-28T14:07:24 IST" name="CheckTitle" finished-at="2026-05-28T14:07:36 IST" duration-ms="12413" status="PASS">
+    <test started-at="2026-05-29T18:17:46 IST" name="Regression" finished-at="2026-05-29T18:17:46 IST" duration-ms="69">
+      <class name="pranav.TestNGDemo">
+        <test-method signature="TestCasee01()[pri:0, instance:pranav.TestNGDemo@557caf28]" started-at="2026-05-29T18:17:46 IST" name="TestCasee01" finished-at="2026-05-29T18:17:46 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckTitle -->
-      </class> <!-- pranav.Assertions -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TestCasee01 -->
+      </class> <!-- pranav.TestNGDemo -->
+      <class name="pranav.Grouping">
+        <test-method signature="TestCaseB()[pri:0, instance:pranav.Grouping@175c2241]" started-at="2026-05-29T18:17:46 IST" name="TestCaseB" finished-at="2026-05-29T18:17:46 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseB -->
+      </class> <!-- pranav.Grouping -->
+    </test> <!-- Regression -->
+  </suite> <!-- Regression Suite -->
 </testng-results>

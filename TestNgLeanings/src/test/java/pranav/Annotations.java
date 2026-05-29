@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 public class Annotations {
 	@BeforeTest
 	public void BeforeTestFunction() {
+		System.out.println("This is Annotation program");
 		System.out.println("This runs Before test case (Preconditions)");
 	}
 	
