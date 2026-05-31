@@ -11,6 +11,7 @@ public class MultipleDataTest {
 	@Test(dataProvider="data",dataProviderClass=multipleData.class)
 	public void tripleData(String username, String password,String data3) {
 		System.out.println(username+"\t"+password+"\t"+data3);
+		
 	}
 
 }
