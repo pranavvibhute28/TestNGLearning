@@ -15,12 +15,28 @@ public class DataProviderBasic {
 		};	
 	}
 	
+	@DataProvider
+	public Object[][] Dataset2(){
+		Object[][] obj = new Object[][] {
+			{"Pranav1","Vibhute1"},
+			{"Pranav2","Vibhute2"}
+		};
+		
+		return obj;
+	}
+	
 	
 	//created testcase to fetch data from dataset provided by dataprovider
 	@Test(dataProvider="Dataset1")
 	public 	void test1(String username,String password) {
-		System.out.println("username" + "\t" + "password");
-		System.out.println(username + "\t" + password);
+		System.out.println(username +"\t"+ password);
+		
+		
+	}
+	
+	@Test(dataProvider="Dataset2")
+	public 	void test2(String username,String password) {
+		System.out.println(username +"\t"+ password);
 		
 		
 	}
