@@ -15,7 +15,7 @@ public class DataProviderBasic {
 		};	
 	}
 	
-	@DataProvider
+	@DataProvider(name = "dataName")
 	public Object[][] Dataset2(){
 		Object[][] obj = new Object[][] {
 			{"Pranav1","Vibhute1"},
@@ -34,7 +34,7 @@ public class DataProviderBasic {
 		
 	}
 	
-	@Test(dataProvider="Dataset2")
+	@Test(dataProvider="dataName")
 	public 	void test2(String username,String password) {
 		System.out.println(username +"\t"+ password);
 		
